@@ -14,6 +14,13 @@ const Landing = () => (
         <h1>Helloooo!</h1>
         <a href="/moreProjects">More Projects</a>
       </div>
+      <img src="images/road_1920x1080.png" alt="Winding Road" />
+      <style jsx>{`
+      img {
+        width: 100%;
+        
+         
+      `}</style>
     </div>
   </Layout>
   );
