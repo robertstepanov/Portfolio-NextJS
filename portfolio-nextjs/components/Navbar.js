@@ -1,11 +1,14 @@
 import Link from 'next/link'
+import styles from '../styles/Navbar.module.scss'
 
 const Navbar = () => (
-    <div className="nav-container">
-    <div className="nav-logo">
-        <img src="images/RS_favicon.png" alt="Robert Stepanov Logo" />
+    <div className={styles.nav_container}>
+    <div className={styles.nav_logo}>
+       {/* Figure out how to add svg's */}
+        <Link href="#home"><img src="/images/navlogo.svg" alt="Robert's Logo" /></Link>
+        
     </div>
-    <ul>
+    <ul className={styles.nav_list}>
         <li><Link href="#home"><a>Home</a></Link></li>
         <li><Link href="#about"><a>About</a></Link></li>
         <li><Link href="#projects"><a>Projects</a></Link></li>
@@ -15,12 +18,9 @@ const Navbar = () => (
 
     <style jsx>{`
 
-      .nav-container {
-          background-color: #222;
-      }
-
+      
       img {
-        width: 50px;
+        width: 250px;
         
          
       `}</style>
