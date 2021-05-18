@@ -12,17 +12,19 @@ const Landing = () => (
           <meta name="description" content="Welcome to my Portfolio" />
           <link rel="icon" href="/favicon.ico.png" />
       </Head>
+      <Image
+        className={styles.landingImage}
+        src="/images/road_1920x1080.png"
+        alt="windy road"
+        layout='fill'
+        objectFit='cover'
+        objectPosition='centner'
+        />
       <div className={styles.welcome}>
         <h1>Helloooo!</h1>
         <a href="/moreProjects">More Projects</a>
       </div>
-      <img src="images/road_1920x1080.png" alt="Winding Road" />
-      {/* <style jsx>{`
-      img {
-        width: 100%;
-        
-         
-      `}</style> */}
+      {/* <img src="images/road_1920x1080.png" alt="Winding Road" /> */}
     </div>
   </Layout>
 

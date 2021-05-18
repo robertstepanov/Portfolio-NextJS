@@ -3,7 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 2em;
-  background-color: blue;
+  position: relative;
+  z-index: 10;
+
+  .nav_logo {
+      width: 10%;
+  }
 
   .nav_list {
     display: flex;
